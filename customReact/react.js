@@ -1,7 +1,7 @@
 function customRender(reactElement,container){
-    const domElement =document.createElement(reactElement.type)
-    domElement.innerHTML=reactElement.children
-    domElement.setAttribute('herf',reactElement.props.herf)
+    const domElement = document.createElement(reactElement.type)
+    domElement.innerHTML = reactElement.children
+    domElement.setAttribute('href',reactElement.props.href)
     domElement.setAttribute('target',reactElement.props.target)
 
     container.appendChild(domElement)
@@ -10,7 +10,7 @@ function customRender(reactElement,container){
 const reactElement = {
     type:'a',
     props:{
-        href:'https://google.com',
+        href:'http://google.com/',
         target:'_blank'
     },
     children:'click me to vist google'
